@@ -1,0 +1,23 @@
+.MainLayout {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 10% 85%;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.MainLayout>header,
+.MainLayout>footer{
+    grid-column: span 6;
+}
+
+.MainLayout>main{
+    grid-column: span 5;
+    background-color: rgba(0, 0, 0, 0.046);
+    
+}
+
+.MainLayout,
+.MainLayout>*{
+    border: 1px solid#eb933446;
+}
